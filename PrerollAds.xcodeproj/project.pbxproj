@@ -1,0 +1,897 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		739E2B611A02814D00E91466 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2B601A02814D00E91466 /* main.m */; };
+		739E2B641A02814D00E91466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2B631A02814D00E91466 /* AppDelegate.m */; };
+		739E2B671A02814D00E91466 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2B661A02814D00E91466 /* ViewController.m */; };
+		739E2B6A1A02814D00E91466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739E2B681A02814D00E91466 /* Main.storyboard */; };
+		739E2B6C1A02814D00E91466 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 739E2B6B1A02814D00E91466 /* Images.xcassets */; };
+		739E2B6F1A02814D00E91466 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 739E2B6D1A02814D00E91466 /* LaunchScreen.xib */; };
+		739E2B7B1A02814E00E91466 /* PrerollAdsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2B7A1A02814E00E91466 /* PrerollAdsTests.m */; };
+		739E2B8B1A0281CB00E91466 /* AdsVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2B881A0281CB00E91466 /* AdsVideoPlayer.m */; };
+		739E2B8C1A0281CB00E91466 /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2B8A1A0281CB00E91466 /* VideoPlayer.m */; };
+		739E2BA51A0284C100E91466 /* iOSAdsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BA41A0284C100E91466 /* iOSAdsTests.m */; };
+		739E2BA81A0284C100E91466 /* iOSAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739E2B941A0284C000E91466 /* iOSAds.framework */; };
+		739E2BAA1A0284C100E91466 /* iOSAds.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 739E2B941A0284C000E91466 /* iOSAds.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		739E2BB41A0284FA00E91466 /* iOSAds.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BB31A0284FA00E91466 /* iOSAds.h */; };
+		739E2BBE1A02851200E91466 /* Creatives.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BB51A02851200E91466 /* Creatives.m */; };
+		739E2BBF1A02851200E91466 /* MediaFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BB61A02851200E91466 /* MediaFile.h */; };
+		739E2BC01A02851200E91466 /* MediaFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BB71A02851200E91466 /* MediaFile.m */; };
+		739E2BC11A02851200E91466 /* Tracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BB81A02851200E91466 /* Tracking.h */; };
+		739E2BC21A02851200E91466 /* Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BB91A02851200E91466 /* Tracking.m */; };
+		739E2BC31A02851200E91466 /* Linear.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BBA1A02851200E91466 /* Linear.h */; };
+		739E2BC41A02851200E91466 /* Linear.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BBB1A02851200E91466 /* Linear.m */; };
+		739E2BC51A02851200E91466 /* VideoClicks.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BBC1A02851200E91466 /* VideoClicks.h */; };
+		739E2BC61A02851200E91466 /* VideoClicks.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BBD1A02851200E91466 /* VideoClicks.m */; };
+		739E2BCB1A02851A00E91466 /* Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BC71A02851A00E91466 /* Extension.h */; };
+		739E2BCC1A02851A00E91466 /* Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BC81A02851A00E91466 /* Extension.m */; };
+		739E2BCD1A02851A00E91466 /* AdInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BC91A02851A00E91466 /* AdInfo.h */; };
+		739E2BCE1A02851A00E91466 /* AdInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BCA1A02851A00E91466 /* AdInfo.m */; };
+		739E2BD51A02852200E91466 /* Ticket.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BCF1A02852200E91466 /* Ticket.h */; };
+		739E2BD61A02852200E91466 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BD01A02852200E91466 /* Ticket.m */; };
+		739E2BD71A02852200E91466 /* TicketList.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BD11A02852200E91466 /* TicketList.h */; };
+		739E2BD81A02852200E91466 /* TicketList.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BD21A02852200E91466 /* TicketList.m */; };
+		739E2BD91A02852200E91466 /* InitTicket.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BD31A02852200E91466 /* InitTicket.h */; };
+		739E2BDA1A02852200E91466 /* InitTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BD41A02852200E91466 /* InitTicket.m */; };
+		739E2BDD1A02852800E91466 /* AdTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BDB1A02852800E91466 /* AdTracking.h */; };
+		739E2BDE1A02852800E91466 /* AdTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BDC1A02852800E91466 /* AdTracking.m */; };
+		739E2BE11A02853200E91466 /* XMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BDF1A02853200E91466 /* XMLParser.h */; };
+		739E2BE21A02853200E91466 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BE01A02853200E91466 /* XMLParser.m */; };
+		739E2BE61A0285BD00E91466 /* Creatives.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BE51A0285BD00E91466 /* Creatives.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		739E2B751A02814E00E91466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739E2B531A02814D00E91466 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739E2B5A1A02814D00E91466;
+			remoteInfo = PrerollAds;
+		};
+		739E2B9F1A0284C100E91466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739E2B531A02814D00E91466 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739E2B5A1A02814D00E91466;
+			remoteInfo = PrerollAds;
+		};
+		739E2BA61A0284C100E91466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739E2B531A02814D00E91466 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739E2B931A0284C000E91466;
+			remoteInfo = iOSAds;
+		};
+		739E2BAB1A0284C100E91466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739E2B531A02814D00E91466 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739E2B931A0284C000E91466;
+			remoteInfo = iOSAds;
+		};
+		739E2BE31A02856700E91466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739E2B531A02814D00E91466 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739E2B5A1A02814D00E91466;
+			remoteInfo = PrerollAds;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		739E2BA91A0284C100E91466 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				739E2BAA1A0284C100E91466 /* iOSAds.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		739E2B5B1A02814D00E91466 /* PrerollAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrerollAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		739E2B5F1A02814D00E91466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739E2B601A02814D00E91466 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		739E2B621A02814D00E91466 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		739E2B631A02814D00E91466 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		739E2B651A02814D00E91466 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		739E2B661A02814D00E91466 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		739E2B691A02814D00E91466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		739E2B6B1A02814D00E91466 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		739E2B6E1A02814D00E91466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		739E2B741A02814E00E91466 /* PrerollAdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrerollAdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		739E2B791A02814E00E91466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739E2B7A1A02814E00E91466 /* PrerollAdsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrerollAdsTests.m; sourceTree = "<group>"; };
+		739E2B871A0281CB00E91466 /* AdsVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsVideoPlayer.h; sourceTree = "<group>"; };
+		739E2B881A0281CB00E91466 /* AdsVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsVideoPlayer.m; sourceTree = "<group>"; };
+		739E2B891A0281CB00E91466 /* VideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayer.h; sourceTree = "<group>"; };
+		739E2B8A1A0281CB00E91466 /* VideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayer.m; sourceTree = "<group>"; };
+		739E2B941A0284C000E91466 /* iOSAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		739E2B971A0284C000E91466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739E2B9E1A0284C100E91466 /* iOSAdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSAdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		739E2BA31A0284C100E91466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739E2BA41A0284C100E91466 /* iOSAdsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSAdsTests.m; sourceTree = "<group>"; };
+		739E2BB31A0284FA00E91466 /* iOSAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSAds.h; sourceTree = "<group>"; };
+		739E2BB51A02851200E91466 /* Creatives.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creatives.m; sourceTree = "<group>"; };
+		739E2BB61A02851200E91466 /* MediaFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFile.h; sourceTree = "<group>"; };
+		739E2BB71A02851200E91466 /* MediaFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaFile.m; sourceTree = "<group>"; };
+		739E2BB81A02851200E91466 /* Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracking.h; sourceTree = "<group>"; };
+		739E2BB91A02851200E91466 /* Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tracking.m; sourceTree = "<group>"; };
+		739E2BBA1A02851200E91466 /* Linear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Linear.h; sourceTree = "<group>"; };
+		739E2BBB1A02851200E91466 /* Linear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Linear.m; sourceTree = "<group>"; };
+		739E2BBC1A02851200E91466 /* VideoClicks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoClicks.h; sourceTree = "<group>"; };
+		739E2BBD1A02851200E91466 /* VideoClicks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoClicks.m; sourceTree = "<group>"; };
+		739E2BC71A02851A00E91466 /* Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Extension.h; sourceTree = "<group>"; };
+		739E2BC81A02851A00E91466 /* Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Extension.m; sourceTree = "<group>"; };
+		739E2BC91A02851A00E91466 /* AdInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdInfo.h; sourceTree = "<group>"; };
+		739E2BCA1A02851A00E91466 /* AdInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdInfo.m; sourceTree = "<group>"; };
+		739E2BCF1A02852200E91466 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		739E2BD01A02852200E91466 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		739E2BD11A02852200E91466 /* TicketList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketList.h; sourceTree = "<group>"; };
+		739E2BD21A02852200E91466 /* TicketList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketList.m; sourceTree = "<group>"; };
+		739E2BD31A02852200E91466 /* InitTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitTicket.h; sourceTree = "<group>"; };
+		739E2BD41A02852200E91466 /* InitTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitTicket.m; sourceTree = "<group>"; };
+		739E2BDB1A02852800E91466 /* AdTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdTracking.h; sourceTree = "<group>"; };
+		739E2BDC1A02852800E91466 /* AdTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdTracking.m; sourceTree = "<group>"; };
+		739E2BDF1A02853200E91466 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		739E2BE01A02853200E91466 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		739E2BE51A0285BD00E91466 /* Creatives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creatives.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		739E2B581A02814D00E91466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739E2BA81A0284C100E91466 /* iOSAds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739E2B711A02814E00E91466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739E2B901A0284C000E91466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739E2B9B1A0284C100E91466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		739E2B521A02814D00E91466 = {
+			isa = PBXGroup;
+			children = (
+				739E2B5D1A02814D00E91466 /* PrerollAds */,
+				739E2B771A02814E00E91466 /* PrerollAdsTests */,
+				739E2BEB1A02874E00E91466 /* Platform */,
+				739E2BA11A0284C100E91466 /* iOSAdsTests */,
+				739E2B5C1A02814D00E91466 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		739E2B5C1A02814D00E91466 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				739E2B5B1A02814D00E91466 /* PrerollAds.app */,
+				739E2B741A02814E00E91466 /* PrerollAdsTests.xctest */,
+				739E2B941A0284C000E91466 /* iOSAds.framework */,
+				739E2B9E1A0284C100E91466 /* iOSAdsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		739E2B5D1A02814D00E91466 /* PrerollAds */ = {
+			isa = PBXGroup;
+			children = (
+				739E2B861A0281B400E91466 /* MediaPlayers */,
+				739E2B621A02814D00E91466 /* AppDelegate.h */,
+				739E2B631A02814D00E91466 /* AppDelegate.m */,
+				739E2B651A02814D00E91466 /* ViewController.h */,
+				739E2B661A02814D00E91466 /* ViewController.m */,
+				739E2B681A02814D00E91466 /* Main.storyboard */,
+				739E2B6B1A02814D00E91466 /* Images.xcassets */,
+				739E2B6D1A02814D00E91466 /* LaunchScreen.xib */,
+				739E2B5E1A02814D00E91466 /* Supporting Files */,
+			);
+			path = PrerollAds;
+			sourceTree = "<group>";
+		};
+		739E2B5E1A02814D00E91466 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				739E2B5F1A02814D00E91466 /* Info.plist */,
+				739E2B601A02814D00E91466 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		739E2B771A02814E00E91466 /* PrerollAdsTests */ = {
+			isa = PBXGroup;
+			children = (
+				739E2B7A1A02814E00E91466 /* PrerollAdsTests.m */,
+				739E2B781A02814E00E91466 /* Supporting Files */,
+			);
+			path = PrerollAdsTests;
+			sourceTree = "<group>";
+		};
+		739E2B781A02814E00E91466 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				739E2B791A02814E00E91466 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		739E2B861A0281B400E91466 /* MediaPlayers */ = {
+			isa = PBXGroup;
+			children = (
+				739E2B871A0281CB00E91466 /* AdsVideoPlayer.h */,
+				739E2B881A0281CB00E91466 /* AdsVideoPlayer.m */,
+				739E2B891A0281CB00E91466 /* VideoPlayer.h */,
+				739E2B8A1A0281CB00E91466 /* VideoPlayer.m */,
+			);
+			name = MediaPlayers;
+			sourceTree = "<group>";
+		};
+		739E2B951A0284C000E91466 /* iOSAds */ = {
+			isa = PBXGroup;
+			children = (
+				739E2BEA1A02874000E91466 /* Ad */,
+				739E2BE91A02872E00E91466 /* Ticket */,
+				739E2BE81A02870800E91466 /* Extension */,
+				739E2BE71A02867C00E91466 /* Creatives */,
+				739E2BDF1A02853200E91466 /* XMLParser.h */,
+				739E2BE01A02853200E91466 /* XMLParser.m */,
+				739E2BB31A0284FA00E91466 /* iOSAds.h */,
+				739E2B961A0284C000E91466 /* Supporting Files */,
+			);
+			path = iOSAds;
+			sourceTree = "<group>";
+		};
+		739E2B961A0284C000E91466 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				739E2B971A0284C000E91466 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		739E2BA11A0284C100E91466 /* iOSAdsTests */ = {
+			isa = PBXGroup;
+			children = (
+				739E2BA41A0284C100E91466 /* iOSAdsTests.m */,
+				739E2BA21A0284C100E91466 /* Supporting Files */,
+			);
+			path = iOSAdsTests;
+			sourceTree = "<group>";
+		};
+		739E2BA21A0284C100E91466 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				739E2BA31A0284C100E91466 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		739E2BE71A02867C00E91466 /* Creatives */ = {
+			isa = PBXGroup;
+			children = (
+				739E2BBC1A02851200E91466 /* VideoClicks.h */,
+				739E2BBD1A02851200E91466 /* VideoClicks.m */,
+				739E2BE51A0285BD00E91466 /* Creatives.h */,
+				739E2BB51A02851200E91466 /* Creatives.m */,
+				739E2BB61A02851200E91466 /* MediaFile.h */,
+				739E2BB71A02851200E91466 /* MediaFile.m */,
+				739E2BB81A02851200E91466 /* Tracking.h */,
+				739E2BB91A02851200E91466 /* Tracking.m */,
+				739E2BBA1A02851200E91466 /* Linear.h */,
+				739E2BBB1A02851200E91466 /* Linear.m */,
+			);
+			name = Creatives;
+			sourceTree = "<group>";
+		};
+		739E2BE81A02870800E91466 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				739E2BC71A02851A00E91466 /* Extension.h */,
+				739E2BC81A02851A00E91466 /* Extension.m */,
+				739E2BC91A02851A00E91466 /* AdInfo.h */,
+				739E2BCA1A02851A00E91466 /* AdInfo.m */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		739E2BE91A02872E00E91466 /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				739E2BCF1A02852200E91466 /* Ticket.h */,
+				739E2BD01A02852200E91466 /* Ticket.m */,
+				739E2BD11A02852200E91466 /* TicketList.h */,
+				739E2BD21A02852200E91466 /* TicketList.m */,
+				739E2BD31A02852200E91466 /* InitTicket.h */,
+				739E2BD41A02852200E91466 /* InitTicket.m */,
+			);
+			name = Ticket;
+			sourceTree = "<group>";
+		};
+		739E2BEA1A02874000E91466 /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				739E2BDB1A02852800E91466 /* AdTracking.h */,
+				739E2BDC1A02852800E91466 /* AdTracking.m */,
+			);
+			name = Ad;
+			sourceTree = "<group>";
+		};
+		739E2BEB1A02874E00E91466 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				739E2B951A0284C000E91466 /* iOSAds */,
+			);
+			name = Platform;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		739E2B911A0284C000E91466 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739E2BCB1A02851A00E91466 /* Extension.h in Headers */,
+				739E2BB41A0284FA00E91466 /* iOSAds.h in Headers */,
+				739E2BD51A02852200E91466 /* Ticket.h in Headers */,
+				739E2BCD1A02851A00E91466 /* AdInfo.h in Headers */,
+				739E2BC51A02851200E91466 /* VideoClicks.h in Headers */,
+				739E2BD71A02852200E91466 /* TicketList.h in Headers */,
+				739E2BD91A02852200E91466 /* InitTicket.h in Headers */,
+				739E2BE11A02853200E91466 /* XMLParser.h in Headers */,
+				739E2BC31A02851200E91466 /* Linear.h in Headers */,
+				739E2BBF1A02851200E91466 /* MediaFile.h in Headers */,
+				739E2BDD1A02852800E91466 /* AdTracking.h in Headers */,
+				739E2BE61A0285BD00E91466 /* Creatives.h in Headers */,
+				739E2BC11A02851200E91466 /* Tracking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		739E2B5A1A02814D00E91466 /* PrerollAds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739E2B7E1A02814E00E91466 /* Build configuration list for PBXNativeTarget "PrerollAds" */;
+			buildPhases = (
+				739E2B571A02814D00E91466 /* Sources */,
+				739E2B581A02814D00E91466 /* Frameworks */,
+				739E2B591A02814D00E91466 /* Resources */,
+				739E2BA91A0284C100E91466 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				739E2BA71A0284C100E91466 /* PBXTargetDependency */,
+				739E2BAC1A0284C100E91466 /* PBXTargetDependency */,
+			);
+			name = PrerollAds;
+			productName = PrerollAds;
+			productReference = 739E2B5B1A02814D00E91466 /* PrerollAds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		739E2B731A02814E00E91466 /* PrerollAdsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739E2B811A02814E00E91466 /* Build configuration list for PBXNativeTarget "PrerollAdsTests" */;
+			buildPhases = (
+				739E2B701A02814E00E91466 /* Sources */,
+				739E2B711A02814E00E91466 /* Frameworks */,
+				739E2B721A02814E00E91466 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				739E2B761A02814E00E91466 /* PBXTargetDependency */,
+			);
+			name = PrerollAdsTests;
+			productName = PrerollAdsTests;
+			productReference = 739E2B741A02814E00E91466 /* PrerollAdsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		739E2B931A0284C000E91466 /* iOSAds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739E2BAD1A0284C100E91466 /* Build configuration list for PBXNativeTarget "iOSAds" */;
+			buildPhases = (
+				739E2B8F1A0284C000E91466 /* Sources */,
+				739E2B901A0284C000E91466 /* Frameworks */,
+				739E2B911A0284C000E91466 /* Headers */,
+				739E2B921A0284C000E91466 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				739E2BE41A02856700E91466 /* PBXTargetDependency */,
+			);
+			name = iOSAds;
+			productName = iOSAds;
+			productReference = 739E2B941A0284C000E91466 /* iOSAds.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		739E2B9D1A0284C100E91466 /* iOSAdsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739E2BB01A0284C100E91466 /* Build configuration list for PBXNativeTarget "iOSAdsTests" */;
+			buildPhases = (
+				739E2B9A1A0284C100E91466 /* Sources */,
+				739E2B9B1A0284C100E91466 /* Frameworks */,
+				739E2B9C1A0284C100E91466 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				739E2BA01A0284C100E91466 /* PBXTargetDependency */,
+			);
+			name = iOSAdsTests;
+			productName = iOSAdsTests;
+			productReference = 739E2B9E1A0284C100E91466 /* iOSAdsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		739E2B531A02814D00E91466 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = MS;
+				TargetAttributes = {
+					739E2B5A1A02814D00E91466 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					739E2B731A02814E00E91466 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 739E2B5A1A02814D00E91466;
+					};
+					739E2B931A0284C000E91466 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					739E2B9D1A0284C100E91466 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 739E2B5A1A02814D00E91466;
+					};
+				};
+			};
+			buildConfigurationList = 739E2B561A02814D00E91466 /* Build configuration list for PBXProject "PrerollAds" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 739E2B521A02814D00E91466;
+			productRefGroup = 739E2B5C1A02814D00E91466 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				739E2B5A1A02814D00E91466 /* PrerollAds */,
+				739E2B731A02814E00E91466 /* PrerollAdsTests */,
+				739E2B931A0284C000E91466 /* iOSAds */,
+				739E2B9D1A0284C100E91466 /* iOSAdsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		739E2B591A02814D00E91466 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739E2B6A1A02814D00E91466 /* Main.storyboard in Resources */,
+				739E2B6F1A02814D00E91466 /* LaunchScreen.xib in Resources */,
+				739E2B6C1A02814D00E91466 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739E2B721A02814E00E91466 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739E2B921A0284C000E91466 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739E2B9C1A0284C100E91466 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		739E2B571A02814D00E91466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739E2B671A02814D00E91466 /* ViewController.m in Sources */,
+				739E2B641A02814D00E91466 /* AppDelegate.m in Sources */,
+				739E2B611A02814D00E91466 /* main.m in Sources */,
+				739E2B8B1A0281CB00E91466 /* AdsVideoPlayer.m in Sources */,
+				739E2B8C1A0281CB00E91466 /* VideoPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739E2B701A02814E00E91466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739E2B7B1A02814E00E91466 /* PrerollAdsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739E2B8F1A0284C000E91466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739E2BC21A02851200E91466 /* Tracking.m in Sources */,
+				739E2BDE1A02852800E91466 /* AdTracking.m in Sources */,
+				739E2BDA1A02852200E91466 /* InitTicket.m in Sources */,
+				739E2BC61A02851200E91466 /* VideoClicks.m in Sources */,
+				739E2BE21A02853200E91466 /* XMLParser.m in Sources */,
+				739E2BC01A02851200E91466 /* MediaFile.m in Sources */,
+				739E2BCC1A02851A00E91466 /* Extension.m in Sources */,
+				739E2BC41A02851200E91466 /* Linear.m in Sources */,
+				739E2BBE1A02851200E91466 /* Creatives.m in Sources */,
+				739E2BD81A02852200E91466 /* TicketList.m in Sources */,
+				739E2BCE1A02851A00E91466 /* AdInfo.m in Sources */,
+				739E2BD61A02852200E91466 /* Ticket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739E2B9A1A0284C100E91466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739E2BA51A0284C100E91466 /* iOSAdsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		739E2B761A02814E00E91466 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739E2B5A1A02814D00E91466 /* PrerollAds */;
+			targetProxy = 739E2B751A02814E00E91466 /* PBXContainerItemProxy */;
+		};
+		739E2BA01A0284C100E91466 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739E2B5A1A02814D00E91466 /* PrerollAds */;
+			targetProxy = 739E2B9F1A0284C100E91466 /* PBXContainerItemProxy */;
+		};
+		739E2BA71A0284C100E91466 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739E2B931A0284C000E91466 /* iOSAds */;
+			targetProxy = 739E2BA61A0284C100E91466 /* PBXContainerItemProxy */;
+		};
+		739E2BAC1A0284C100E91466 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739E2B931A0284C000E91466 /* iOSAds */;
+			targetProxy = 739E2BAB1A0284C100E91466 /* PBXContainerItemProxy */;
+		};
+		739E2BE41A02856700E91466 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739E2B5A1A02814D00E91466 /* PrerollAds */;
+			targetProxy = 739E2BE31A02856700E91466 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		739E2B681A02814D00E91466 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				739E2B691A02814D00E91466 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		739E2B6D1A02814D00E91466 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				739E2B6E1A02814D00E91466 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		739E2B7C1A02814E00E91466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		739E2B7D1A02814E00E91466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		739E2B7F1A02814E00E91466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/mikael/Documents,
+				);
+				INFOPLIST_FILE = PrerollAds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		739E2B801A02814E00E91466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/mikael/Documents,
+				);
+				INFOPLIST_FILE = PrerollAds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		739E2B821A02814E00E91466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrerollAdsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrerollAds.app/PrerollAds";
+			};
+			name = Debug;
+		};
+		739E2B831A02814E00E91466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrerollAdsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrerollAds.app/PrerollAds";
+			};
+			name = Release;
+		};
+		739E2BAE1A0284C100E91466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iOSAds/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		739E2BAF1A0284C100E91466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = iOSAds/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		739E2BB11A0284C100E91466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iOSAdsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrerollAds.app/PrerollAds";
+			};
+			name = Debug;
+		};
+		739E2BB21A0284C100E91466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iOSAdsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrerollAds.app/PrerollAds";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		739E2B561A02814D00E91466 /* Build configuration list for PBXProject "PrerollAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739E2B7C1A02814E00E91466 /* Debug */,
+				739E2B7D1A02814E00E91466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		739E2B7E1A02814E00E91466 /* Build configuration list for PBXNativeTarget "PrerollAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739E2B7F1A02814E00E91466 /* Debug */,
+				739E2B801A02814E00E91466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		739E2B811A02814E00E91466 /* Build configuration list for PBXNativeTarget "PrerollAdsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739E2B821A02814E00E91466 /* Debug */,
+				739E2B831A02814E00E91466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		739E2BAD1A0284C100E91466 /* Build configuration list for PBXNativeTarget "iOSAds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739E2BAE1A0284C100E91466 /* Debug */,
+				739E2BAF1A0284C100E91466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		739E2BB01A0284C100E91466 /* Build configuration list for PBXNativeTarget "iOSAdsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739E2BB11A0284C100E91466 /* Debug */,
+				739E2BB21A0284C100E91466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 739E2B531A02814D00E91466 /* Project object */;
+}
