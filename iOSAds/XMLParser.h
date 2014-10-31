@@ -28,10 +28,7 @@
     Extension* extension;
     AdInfo* adinfo;
     TicketList* ticketlist;
-    NSMutableArray* tickets;
 }
-
-@property (copy) NSMutableArray* tickets;
 
 - (XMLParser*) initXmlParser;
 - (void) doParse;

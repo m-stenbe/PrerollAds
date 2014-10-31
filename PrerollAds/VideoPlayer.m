@@ -15,6 +15,7 @@
         self.listener = nil;
         contentUrl = url;
         videoView = frame;
+        duration = 0.0;
     }
     return self;
 }
@@ -26,6 +27,7 @@
     [videoPlayer setContentURL:contentUrl];
     [videoPlayer.view setFrame:videoView];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(contentPlaybackDone:) name:MPMoviePlayerPlaybackDidFinishNotification object:videoPlayer];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(MPMoviePlayerLoadStateDidChange:)                                                 name:MPMoviePlayerLoadStateDidChangeNotification object:nil];
     [videoPlayer setControlStyle:MPMovieControlStyleFullscreen];
     [self addSubview:videoPlayer.view];
     [videoPlayer prepareToPlay];
@@ -58,6 +60,16 @@
     }
 }
 
+- (void)insertAtAtDuration:(float)theDuration {
+    NSTimeInterval interval = duration;
+    NSTimer* timer = [NSTimer timerWithTimeInterval:interval target:self selector:@selector(pausePlayer) userInfo:nil repeats:YES];
+}
+
+- (void) pausePlayer {
+    [videoPlayer pause];
+    //TODO resume etc
+}
+
 #pragma Handle Errors
 
 - (void) displayError:(NSError*) error {
@@ -69,6 +81,13 @@
                               cancelButtonTitle:@"OK"
                               otherButtonTitles:nil];
         [alert show];
+    }
+}
+
+- (void)MPMoviePlayerLoadStateDidChange:(NSNotification *)notification {
+    if ((videoPlayer.loadState & MPMovieLoadStatePlaythroughOK) == MPMovieLoadStatePlaythroughOK) {
+        duration = videoPlayer.duration;
+        NSLog(@"length is %f seconds", videoPlayer.duration);
     }
 }
 
@@ -89,7 +108,7 @@
         [self setupPlayer];
     }
     else {
-        [videoPlayer prepareToPlay];
+        [videoPlayer play];
     }
 }
 

@@ -8,8 +8,6 @@
 
 #import "AdsVideoPlayer.h"
 #import "AdTracking.h"
-//#import <iOSAds/AdTracking.h>
-//#import <iOSAds/MediaFile.h>
 #import "MediaFile.h"
 
 @implementation AdsVideoPlayer
@@ -45,6 +43,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(adsPlaybackDone:) name:MPMoviePlayerPlaybackDidFinishNotification object:adsPlayer];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resumeMediaPlayer) name:UIApplicationDidBecomeActiveNotification object:nil];
     [adsPlayer setControlStyle:MPMovieControlStyleNone];
+    NSTimeInterval inter = adsPlayer.duration;
+    NSLog(@"%f", inter);
     [self addSubview:adsPlayer.view];
     [self addSubview:[self setupClickThroughView]];
     [adsPlayer prepareToPlay];

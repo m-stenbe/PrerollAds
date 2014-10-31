@@ -15,7 +15,7 @@
         mediafiles = [NSMutableArray new];
         trackings = [NSMutableArray new];
         videoclicks = [NSMutableArray new];
-        self.duration = 0.0;
+        self.duration = @"";
     }
     return self;
 }

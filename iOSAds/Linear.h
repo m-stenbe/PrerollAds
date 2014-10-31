@@ -17,7 +17,7 @@
     NSMutableArray* videoclicks;
 }
 
-@property (assign) float duration;
+@property (copy) NSString* duration;
 
 - (void) addTrackingEvents:(Tracking*) event;
 - (Tracking*) getTrackingEvent:(int) index;

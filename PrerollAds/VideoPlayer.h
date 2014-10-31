@@ -13,16 +13,17 @@
 
 @required
 - (void) removeZePlayer;
-
 @end
 
 @interface VideoPlayer : UIView {
     MPMoviePlayerController* videoPlayer;
     NSURL* contentUrl;
     CGRect videoView;
+    float duration;
 }
 
 - (void) playMe;
+- (void) insertAtAtDuration:(float) theDuration;
 - (id) initWithFrame:(CGRect)frame andContentURl:(NSURL*) url;
 @property id<VideoPlayerListener> listener;
 

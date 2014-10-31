@@ -20,15 +20,15 @@
 #define TicketUrl @"http://carrers.videoplaza.tv/proxy/distributor/v2?rt=vast_2.0&st=20:1&t=recruitment1"
 
 @implementation XMLParser
-@synthesize tickets;
 
 - (XMLParser*) initXmlParser {
     if (self = [super init]) {
-        tickets = [NSMutableArray new];
         ticketlist = [TicketList new];
     }
     return self;
 }
+
+// A nicer solution would be to have the objects parse the XML file on their own when they are needed but one can argue aswell that it makes needless calls to the XML file url, or you can just store the XML file in the FW.
 
 #pragma XMLParser
 
@@ -132,7 +132,7 @@
         return;
     }
     if ([elementName isEqualToString:@"Duration"]) {
-        [linear setDuration:currentElementValue.floatValue];
+        [linear setDuration:currentElementValue];
         return;
     }
     if ([elementName isEqualToString:@"Creative"]) {
@@ -182,7 +182,6 @@
     [parser setDelegate:parse];
     BOOL success = [parser parse];
     if (success) {
-        tickets = [parse tickets];
     }
     else {
         NSError* error = [parser parserError];
@@ -191,11 +190,5 @@
     parser = nil;
     parse = nil;
 }
-
-// return an array of tickets
-
-//- (NSArray *)getTicket {
-//    return tickets;
-//}
 
 @end

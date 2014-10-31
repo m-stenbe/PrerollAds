@@ -30,6 +30,7 @@
 }
 
 - (void) playAdsMe;
+- (void) playAdAtPoint:(float) insertPoint;
 @property id<AdsVideoPlayerListener> listener;
 
 @end
