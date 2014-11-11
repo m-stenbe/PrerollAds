@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7399DE0E1A126E8D00AEB939 /* iOSAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739E2B941A0284C000E91466 /* iOSAds.framework */; };
+		7399DE0F1A126E8D00AEB939 /* iOSAds.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 739E2B941A0284C000E91466 /* iOSAds.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7399DE111A126FC600AEB939 /* iOSAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739E2B941A0284C000E91466 /* iOSAds.framework */; };
+		7399DE121A12701100AEB939 /* iOSAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739E2B941A0284C000E91466 /* iOSAds.framework */; };
+		7399DE141A12703500AEB939 /* iOSAdsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7399DE131A12703500AEB939 /* iOSAdsTests.m */; };
 		739E2B611A02814D00E91466 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2B601A02814D00E91466 /* main.m */; };
 		739E2B641A02814D00E91466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2B631A02814D00E91466 /* AppDelegate.m */; };
 		739E2B671A02814D00E91466 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2B661A02814D00E91466 /* ViewController.m */; };
@@ -16,9 +21,6 @@
 		739E2B7B1A02814E00E91466 /* PrerollAdsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2B7A1A02814E00E91466 /* PrerollAdsTests.m */; };
 		739E2B8B1A0281CB00E91466 /* AdsVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2B881A0281CB00E91466 /* AdsVideoPlayer.m */; };
 		739E2B8C1A0281CB00E91466 /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2B8A1A0281CB00E91466 /* VideoPlayer.m */; };
-		739E2BA51A0284C100E91466 /* iOSAdsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BA41A0284C100E91466 /* iOSAdsTests.m */; };
-		739E2BA81A0284C100E91466 /* iOSAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739E2B941A0284C000E91466 /* iOSAds.framework */; };
-		739E2BAA1A0284C100E91466 /* iOSAds.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 739E2B941A0284C000E91466 /* iOSAds.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		739E2BB41A0284FA00E91466 /* iOSAds.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BB31A0284FA00E91466 /* iOSAds.h */; };
 		739E2BBE1A02851200E91466 /* Creatives.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BB51A02851200E91466 /* Creatives.m */; };
 		739E2BBF1A02851200E91466 /* MediaFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BB61A02851200E91466 /* MediaFile.h */; };
@@ -61,13 +63,6 @@
 			remoteGlobalIDString = 739E2B5A1A02814D00E91466;
 			remoteInfo = PrerollAds;
 		};
-		739E2BA61A0284C100E91466 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 739E2B531A02814D00E91466 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 739E2B931A0284C000E91466;
-			remoteInfo = iOSAds;
-		};
 		739E2BAB1A0284C100E91466 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 739E2B531A02814D00E91466 /* Project object */;
@@ -85,13 +80,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		739E2BA91A0284C100E91466 /* Embed Frameworks */ = {
+		7399DE101A126E8D00AEB939 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				739E2BAA1A0284C100E91466 /* iOSAds.framework in Embed Frameworks */,
+				7399DE0F1A126E8D00AEB939 /* iOSAds.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +94,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7399DE131A12703500AEB939 /* iOSAdsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSAdsTests.m; sourceTree = "<group>"; };
 		739E2B5B1A02814D00E91466 /* PrerollAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrerollAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		739E2B5F1A02814D00E91466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		739E2B601A02814D00E91466 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -120,7 +116,6 @@
 		739E2B971A0284C000E91466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		739E2B9E1A0284C100E91466 /* iOSAdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSAdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		739E2BA31A0284C100E91466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		739E2BA41A0284C100E91466 /* iOSAdsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSAdsTests.m; sourceTree = "<group>"; };
 		739E2BB31A0284FA00E91466 /* iOSAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSAds.h; sourceTree = "<group>"; };
 		739E2BB51A02851200E91466 /* Creatives.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creatives.m; sourceTree = "<group>"; };
 		739E2BB61A02851200E91466 /* MediaFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFile.h; sourceTree = "<group>"; };
@@ -153,7 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739E2BA81A0284C100E91466 /* iOSAds.framework in Frameworks */,
+				7399DE0E1A126E8D00AEB939 /* iOSAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7399DE111A126FC600AEB939 /* iOSAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7399DE121A12701100AEB939 /* iOSAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +279,8 @@
 		739E2BA11A0284C100E91466 /* iOSAdsTests */ = {
 			isa = PBXGroup;
 			children = (
-				739E2BA41A0284C100E91466 /* iOSAdsTests.m */,
 				739E2BA21A0284C100E91466 /* Supporting Files */,
+				7399DE131A12703500AEB939 /* iOSAdsTests.m */,
 			);
 			path = iOSAdsTests;
 			sourceTree = "<group>";
@@ -387,12 +384,11 @@
 				739E2B571A02814D00E91466 /* Sources */,
 				739E2B581A02814D00E91466 /* Frameworks */,
 				739E2B591A02814D00E91466 /* Resources */,
-				739E2BA91A0284C100E91466 /* Embed Frameworks */,
+				7399DE101A126E8D00AEB939 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				739E2BA71A0284C100E91466 /* PBXTargetDependency */,
 				739E2BAC1A0284C100E91466 /* PBXTargetDependency */,
 			);
 			name = PrerollAds;
@@ -579,7 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739E2BA51A0284C100E91466 /* iOSAdsTests.m in Sources */,
+				7399DE141A12703500AEB939 /* iOSAdsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,11 +591,6 @@
 			isa = PBXTargetDependency;
 			target = 739E2B5A1A02814D00E91466 /* PrerollAds */;
 			targetProxy = 739E2B9F1A0284C100E91466 /* PBXContainerItemProxy */;
-		};
-		739E2BA71A0284C100E91466 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 739E2B931A0284C000E91466 /* iOSAds */;
-			targetProxy = 739E2BA61A0284C100E91466 /* PBXContainerItemProxy */;
 		};
 		739E2BAC1A0284C100E91466 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -737,6 +728,7 @@
 				);
 				INFOPLIST_FILE = PrerollAds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -866,6 +858,7 @@
 				739E2B801A02814E00E91466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		739E2B811A02814E00E91466 /* Build configuration list for PBXNativeTarget "PrerollAdsTests" */ = {
 			isa = XCConfigurationList;
@@ -874,6 +867,7 @@
 				739E2B831A02814E00E91466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		739E2BAD1A0284C100E91466 /* Build configuration list for PBXNativeTarget "iOSAds" */ = {
 			isa = XCConfigurationList;
@@ -882,6 +876,7 @@
 				739E2BAF1A0284C100E91466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		739E2BB01A0284C100E91466 /* Build configuration list for PBXNativeTarget "iOSAdsTests" */ = {
 			isa = XCConfigurationList;
@@ -890,6 +885,7 @@
 				739E2BB21A0284C100E91466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

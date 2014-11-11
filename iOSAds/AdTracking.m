@@ -74,7 +74,7 @@
                     clickTracking = [clicks clickTracking];
                 }
                 for (int n = 0; n < [linear getTrackingCount]; n++) {
-                    trackingArr = [linear getTrackingEvents];
+                    trackingArr = (NSMutableArray*)[linear getTrackingEvents];
                 }
             }
         }
@@ -94,6 +94,7 @@
     NSURLResponse* response;
     NSError* err;
     NSData* rData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];
+    NSLog(@"%@", rData);
     NSHTTPURLResponse* resp = (NSHTTPURLResponse*) response;
     NSInteger code = [resp statusCode];
     return code;

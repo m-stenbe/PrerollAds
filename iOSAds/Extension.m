@@ -34,7 +34,7 @@
     return adinfos;
 }
 - (int) getAdInfoCount {
-    return [adinfos count];
+    return (int)[adinfos count];
 }
 
 @end

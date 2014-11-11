@@ -32,7 +32,7 @@
 }
 
 - (int)getLinearCount {
-    return [linears count];
+    return (int)[linears count];
 }
 
 - (NSArray*) getLinear {

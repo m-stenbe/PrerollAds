@@ -32,7 +32,7 @@
     return nil;
 }
 - (int) getTrackingCount {
-    return [trackings count];
+    return (int)[trackings count];
 }
 - (NSArray*) getTrackingEvents {
     return trackings;
@@ -52,7 +52,7 @@
 }
 
 - (int) getMediaFileCount {
-    return [mediafiles count];
+    return (int)[mediafiles count];
 }
 
 - (NSArray*) getMediaFiles {
@@ -71,7 +71,7 @@
     return nil;
 }
 - (int) getVideoClicksCount {
-    return [videoclicks count];
+    return (int)[videoclicks count];
 }
 - (NSArray*) getVideoClicks {
     return videoclicks;

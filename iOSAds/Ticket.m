@@ -39,7 +39,7 @@
 }
 
 - (int) getCreativeCount {
-    return [creatives count];
+    return (int)[creatives count];
 }
 
 - (void) addExtensions:(Extension*) extension {
@@ -58,7 +58,7 @@
 }
 
 - (int) getExtensionCount {
-    return [extensions count];
+    return (int)[extensions count];
 }
 
 @end

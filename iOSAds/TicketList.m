@@ -36,7 +36,7 @@ static TicketList* instance = nil;
     return tickets;
 }
 - (int) getTicketCount {
-    return [tickets count];
+    return (int)[tickets count];
 }
 - (Ticket*) getTicket:(int) index {
     if ([tickets count] > 0)  {
