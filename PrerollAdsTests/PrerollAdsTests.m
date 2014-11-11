@@ -69,12 +69,12 @@
     XCTAssertEqual(returnCode, 200);
 }
 
-- (void)testThatTrackingSendsErrorWhenCodeIsNot200 {
+- (void)testThatTrackingIsNotSentOKReturnCodeIsNot200 {
     NSInteger returnCode = [tracking sendTrackingData:MADEUPURL];
     XCTAssertNotEqual(returnCode, 200);
 }
 
-- (void) testAdPlayed {
+- (void) testAdPlayedMethod {
     [tracking adPlayed];
 }
 
@@ -89,7 +89,7 @@
 
 #pragma AdsVideoPlayer
 
-- (void) testIfSetupClickThroughViewIsNotNil {
+- (void) testIfSetupClickThroughViewIsNotNilThusItHasBeenInitialized {
     XCTAssertNotNil([ads setupClickThroughView]);
 }
 
