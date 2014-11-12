@@ -58,6 +58,10 @@
     }
 }
 
+- (NSString*) wrongMethod {
+    return @"FEL";
+}
+
 //get tracking & clickthrough info from the parsed XML file
 
 - (void)getTrackingInfo {

@@ -33,5 +33,6 @@
 
 - (void) adClicked;
 - (void) adPlayed;
+- (NSString*) wrongMethod;
 
 @end

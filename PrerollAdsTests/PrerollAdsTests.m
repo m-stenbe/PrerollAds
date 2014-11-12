@@ -12,6 +12,11 @@
 #import "AdTracking.h"
 #import "MediaFile.h"
 #import "AdsVideoPlayer.h"
+#import "OCMock.h"
+#import "OCMockObject.h"
+#import "OCMMacroState.h"
+#import "OCMStubRecorder.h"
+#import "OCMRecorder.h"
 
 #define CLICKTRACKINGURL @"http://carrers.videoplaza.tv/proxy/tracker/v2?aid=5896fbf5-4b6e-4ea0-a45b-58f232bb0ddc&cf=short_form&dcid=b43bcb1c-8384-421b-906f-37b181ccc5a8&e=20&pid=f9b7e055-27a6-47ba-8f0c-346491c7d835&t=recruitment1&tid=b34fbb99-69c8-11e4-a8dd-002590e342b5&tt=p"
 #define TRACKINGEVENTURL @"http://carrers.videoplaza.tv/proxy/tracker/v2?aid=5896fbf5-4b6e-4ea0-a45b-58f232bb0ddc&cf=short_form&dcid=b43bcb1c-8384-421b-906f-37b181ccc5a8&e=18&pid=f9b7e055-27a6-47ba-8f0c-346491c7d835&t=recruitment1&tid=b34fbb99-69c8-11e4-a8dd-002590e342b5&tt=p"
@@ -75,22 +80,44 @@
 }
 
 - (void) testAdPlayedMethod {
-    [tracking adPlayed];
+    id mock = OCMClassMock([AdTracking class]);
+    [mock adPlayed];
+    OCMVerifyAll(mock);
 }
+
+- (void) testIfTheOrderOfMethodsIsCalledCorrectly {
+    id mock = OCMStrictClassMock([AdTracking class]);
+    [mock setExpectationOrderMatters:YES];
+    OCMExpect([mock adPlayed]);
+    OCMExpect([mock sendTrackingData:CLICKTRACKINGURL]);
+    //will fail if order is switched below
+    [mock adPlayed];
+    [mock sendTrackingData:CLICKTRACKINGURL];
+    OCMVerifyAll(mock);
+}
+
 
 #pragma MediaFile
 
-- (void) testThatTheMediaFileIsOfCorrectClass {
+- (void) testThatTheObjectInTheArrayIsOfTheCorrectClass {
     NSMutableArray* arr = [NSMutableArray arrayWithArray:[mediafile getMediaFiles]];
-    for (MediaFile* m in arr) {
-        XCTAssert([m isKindOfClass:[MediaFile class]]);
-    }
+    XCTAssert([[arr objectAtIndex:0] isKindOfClass:[MediaFile class]]);
 }
 
 #pragma AdsVideoPlayer
 
 - (void) testIfSetupClickThroughViewIsNotNilThusItHasBeenInitialized {
     XCTAssertNotNil([ads setupClickThroughView]);
+}
+
+#pragma Supposed to fail
+
+- (void) testThrowExceptionIfCertainMethodIsCalled {
+    id mock = OCMClassMock([AdTracking class]);
+    OCMStub([mock adClicked]).andThrow([NSException exceptionWithName:@"FEL" reason:@"Fel metod du!" userInfo:nil]);
+    [mock adPlayed];
+    [mock adClicked];
+    OCMVerifyAll(mock);
 }
 
 @end

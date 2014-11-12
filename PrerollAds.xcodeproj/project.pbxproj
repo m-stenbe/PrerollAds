@@ -46,6 +46,7 @@
 		739E2BE11A02853200E91466 /* XMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BDF1A02853200E91466 /* XMLParser.h */; };
 		739E2BE21A02853200E91466 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 739E2BE01A02853200E91466 /* XMLParser.m */; };
 		739E2BE61A0285BD00E91466 /* Creatives.h in Headers */ = {isa = PBXBuildFile; fileRef = 739E2BE51A0285BD00E91466 /* Creatives.h */; };
+		73A589C91A136F810023B4E5 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A589C81A136F810023B4E5 /* libOCMock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,16 @@
 		739E2BDF1A02853200E91466 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
 		739E2BE01A02853200E91466 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
 		739E2BE51A0285BD00E91466 /* Creatives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creatives.h; sourceTree = "<group>"; };
+		73A589BF1A136F5E0023B4E5 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		73A589C01A136F5E0023B4E5 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		73A589C11A136F5E0023B4E5 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		73A589C21A136F5E0023B4E5 /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
+		73A589C31A136F5E0023B4E5 /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
+		73A589C41A136F5E0023B4E5 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		73A589C51A136F5E0023B4E5 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		73A589C61A136F5E0023B4E5 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
+		73A589C71A136F5E0023B4E5 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
+		73A589C81A136F810023B4E5 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = usr/lib/libOCMock.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A589C91A136F810023B4E5 /* libOCMock.a in Frameworks */,
 				7399DE111A126FC600AEB939 /* iOSAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +193,7 @@
 		739E2B521A02814D00E91466 = {
 			isa = PBXGroup;
 			children = (
+				73A589BB1A136F380023B4E5 /* usr */,
 				739E2B5D1A02814D00E91466 /* PrerollAds */,
 				739E2B771A02814E00E91466 /* PrerollAdsTests */,
 				739E2BEB1A02874E00E91466 /* Platform */,
@@ -349,6 +362,48 @@
 				739E2B951A0284C000E91466 /* iOSAds */,
 			);
 			name = Platform;
+			sourceTree = "<group>";
+		};
+		73A589BB1A136F380023B4E5 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				73A589BD1A136F460023B4E5 /* lib */,
+				73A589BC1A136F3F0023B4E5 /* inlude */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		73A589BC1A136F3F0023B4E5 /* inlude */ = {
+			isa = PBXGroup;
+			children = (
+				73A589BE1A136F5E0023B4E5 /* OCMock */,
+			);
+			name = inlude;
+			sourceTree = "<group>";
+		};
+		73A589BD1A136F460023B4E5 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				73A589C81A136F810023B4E5 /* libOCMock.a */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		73A589BE1A136F5E0023B4E5 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				73A589BF1A136F5E0023B4E5 /* NSNotificationCenter+OCMAdditions.h */,
+				73A589C01A136F5E0023B4E5 /* OCMArg.h */,
+				73A589C11A136F5E0023B4E5 /* OCMConstraint.h */,
+				73A589C21A136F5E0023B4E5 /* OCMLocation.h */,
+				73A589C31A136F5E0023B4E5 /* OCMMacroState.h */,
+				73A589C41A136F5E0023B4E5 /* OCMock.h */,
+				73A589C51A136F5E0023B4E5 /* OCMockObject.h */,
+				73A589C61A136F5E0023B4E5 /* OCMRecorder.h */,
+				73A589C71A136F5E0023B4E5 /* OCMStubRecorder.h */,
+			);
+			name = OCMock;
+			path = usr/include/OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -745,8 +800,23 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/usr/include",
+				);
 				INFOPLIST_FILE = PrerollAdsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/usr/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrerollAds.app/PrerollAds";
 			};
@@ -760,8 +830,23 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/usr/include",
+				);
 				INFOPLIST_FILE = PrerollAdsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/usr/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrerollAds.app/PrerollAds";
 			};
